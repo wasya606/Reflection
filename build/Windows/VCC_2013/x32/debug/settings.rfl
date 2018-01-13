@@ -1,0 +1,36 @@
+//*****************  DESCRIPTION  *****************
+// Scenario for set initial settings
+// Commands format:
+// SET_SETTINGS <int SettingsID> <int SettingsFlagsValue>
+// SET_SETTINGS_FLAG <int SettingsID> <int SettingsFlag> <bool value>
+// SettingsID - ID of settings group
+// 0 - Validation settings group
+// 1 - Logging Settings group
+// -- Validation settings flags: --
+// 1st. bit - enable/disable validating arguments count
+// 2st. bit - enable/disable validating arguments type size
+// 3st. bit - enable/disable validating signing for int arguments
+// -- Logging settings flags: --
+// 1st. bit - enable/disable show errors
+// 2st. bit - enable/disable show warnings 
+// 3st. bit - enable/disable show info
+// ----------
+// SettingsFlag - 1 << flag 
+// 1 - for 1st. bit
+// 2 - for 2st. bit
+// 4 - for 3st. bit
+// SettingsFlagsValue = 1st. bit | 2st. bit | 3st. bit
+// Examples:
+// SET_SETTINGS 0 3
+// SET_SETTINGS_FLAG 1 2 true
+// SET_SETTINGS_FLAG 0 3 false
+// SET_SETTINGS_FLAG 1 3 1
+// SET_SETTINGS_FLAG 1 1 0
+//*******************  START SCENARIO  *********************
+SET_SETTINGS_FLAG 0 1 true
+
+SET_SETTINGS_FLAG 1 1 true
+SET_SETTINGS_FLAG 1 2 true
+SET_SETTINGS_FLAG 1 4 true
+//SET_SETTINGS_FLAG 1 8 true
+//*******************  END SCENARIO  *********************

@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\commandmanager.o
+./release\loggerImpl.o
+./release\settingsimpl.o
+./release\menu.o
+./release\demoapp.o
+./release\menuitem.o
+./release\menufactory.o
+./release\demofunctions.o
+./release\functioninfo.o
+);

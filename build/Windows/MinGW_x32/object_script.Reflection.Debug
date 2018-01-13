@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\commandmanager.o
+./debug\loggerImpl.o
+./debug\settingsimpl.o
+./debug\menu.o
+./debug\demoapp.o
+./debug\menuitem.o
+./debug\menufactory.o
+./debug\demofunctions.o
+./debug\functioninfo.o
+);
