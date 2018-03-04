@@ -51,7 +51,7 @@ struct FunctionData<RetType (*)(Args...)>
             }
             catch(...)
             {
-                Logger::error() << "Invoke exeption!!!";
+                Logger::error() << "Invoke exception!!!";
             }
 
             cleanAll();

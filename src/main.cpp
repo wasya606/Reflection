@@ -42,10 +42,10 @@ int main()
 {   
     initSettings();
 
-    //test();
+    test();
 
-    DemoApp demoApp;
-    demoApp.start();
+    //DemoApp demoApp;
+    //demoApp.start();
 
     return 0;
 }
